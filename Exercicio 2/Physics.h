@@ -10,9 +10,7 @@ namespace my_game {
 			bool hit_ = false;
 		public:
 
-			Rectangle rect1, rect2;
-
-			bool Compute_Collision() {
+			bool Compute_Collision(Rectangle rect1, Rectangle rect2) {
 				if (rect1.central_x < rect2.central_x + rect2.rect_width &&
 					rect1.central_x + rect1.rect_width > rect2.central_x &&
 					rect1.central_y < rect2.central_y + rect2.rect_height &&
